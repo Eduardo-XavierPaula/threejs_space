@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Three.js Space</title>
+		<link rel="icon" type="image/x-icon" href="/public/rocket.ico" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="bg-animation">
+			<div id="stars"></div>
+			<div id="stars2"></div>
+			<div id="stars3"></div>
+			<div id="stars4"></div>
+		</div>
+		<header>
+			<div class="content-fit">
+				<div class="logo">EX</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="#about"> Sobre </a>
+						</li>
+						<li>
+							<a href="#nasa"> Foto da Nasa </a>
+						</li>
+						<li><a href="#contact">Contato </a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="section" id="about">
+			<div class="content-fit">
+				<h1 class="title" data-before="WEBSITEDESIGN">3D animation</h1>
+				<div class="text-content">
+					<p>
+						Este projeto pessoal foi criado para aprender e praticar mais sobre
+						frontend, utilizando animações 3D, CSS e consumo de APIs.
+					</p>
+					<p>
+						Foram utilizadas tecnologias como Three.js e a API da NASA, que
+						permitem a criação de animações interativas e a apresentação de
+						curiosidades sobre o espaço, incluindo as fotos do dia fornecidas
+						pela NASA. Essa combinação de tecnologia e ciência oferece uma
+						jornada envolvente pelo cosmos, inspirando você a explorar ainda
+						mais!
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="nasa">
+			<div class="content-fit">
+				<h3 class="title">Imagem do Dia da NASA</h3>
+				<figure id="apod">
+					<img
+						id="apodImage"
+						alt="Astronomy Picture of the Day"
+						style="display: none"
+						width="600"
+					/>
+					<div id="error" style="display: none">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="24px"
+							viewBox="0 -960 960 960"
+							width="24px"
+						>
+							<path
+								d="m840-234-80-80v-446H314l-80-80h526q33 0 56.5 23.5T840-760v526ZM792-56l-64-64H200q-33 0-56.5-23.5T120-200v-528l-64-64 56-56 736 736-56 56ZM240-280l120-160 90 120 33-44-283-283v447h447l-80-80H240Zm297-257ZM424-424Z"
+							/>
+						</svg>
+					</div>
+					<div id="loading">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="24px"
+							viewBox="0 -960 960 960"
+							width="24px"
+						>
+							<path
+								d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm40-80h480L570-480 450-320l-90-120-120 160Zm-40 80v-560 560Z"
+							/>
+						</svg>
+					</div>
+					<figcaption id="apodCaption">Carregando...</figcaption>
+				</figure>
+				<p id="apodExplanation">Carregando...</p>
+			</div>
+		</div>
+		<div class="section" id="contact">
+			<div class="content-fit">
+				<h3 class="title">Contato</h3>
+				<ul class="contact_list">
+					<li class="contact_container">
+						<h6 class="contact_title">Email</h6>
+						<div class="contant_info">
+							<a href="mailto:edpxavier@gmail.com"> Acessar </a>
+						</div>
+					</li>
+					<li class="contact_container">
+						<h6 class="contact_title">Linkedin</h6>
+						<div class="contant_info">
+							<a
+								href="https://www.linkedin.com/in/eduardo-de-paula-xavier-7b3149216/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Acessar
+							</a>
+						</div>
+					</li>
+					<li class="contact_container">
+						<h6 class="contact_title">GitHub</h6>
+						<div class="contant_info">
+							<a
+								href="https://github.com/Eduardo-XavierPaula"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Acessar
+							</a>
+						</div>
+					</li>
+					<li class="contact_container">
+						<h6 class="contact_title">Portfólio</h6>
+						<div class="contant_info">
+							<a
+								href="https://portfolio-one-nu-61.vercel.app/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Acessar
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="section" id="end">
+			<div class="content-fit">
+				<h3 class="title">Feito por</h3>
+				<p>Eduardo de Paula Xavier</p>
+			</div>
+		</div>
+		<div id="container3D"></div>
+		<script type="module" src="app.js"></script>
+	</body>
+</html>

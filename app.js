@@ -16,7 +16,7 @@ let ship;
 let mixer;
 const loader = new GLTFLoader();
 loader.load(
-	"/public/multi_universe_space_ship_3d_model.glb",
+	"/assets/multi_universe_space_ship_3d_model.glb",
 	function (gltf) {
 		ship = gltf.scene;
 		scene.add(ship);
